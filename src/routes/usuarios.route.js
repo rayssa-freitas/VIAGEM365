@@ -60,7 +60,7 @@ usuarioRoutes.post('/cadastro', async (req, res) => {
      return res.status(400).json({
       message: 'O campo data de nascimento não está no formato correto!'
      })
-
+    }
      const sexoConversaoMinusculo = sexo.toLowerCase();
 
      if(!['masculino', 'feminino', 'outro'].includes(sexoConversaoMinusculo)) {
@@ -109,7 +109,7 @@ usuarioRoutes.post('/cadastro', async (req, res) => {
  })
  res.status(201).json(usuario)
 
-    }
+    
    } catch (error) {
     console.error(error.message)
     res.status(500).json({
