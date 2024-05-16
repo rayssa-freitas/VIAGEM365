@@ -8,8 +8,8 @@ const routes = Router()
 // routes.use('/destinos', destinoRoutes)
 
 
-routes.get('/testando', (req, res) => {
- res.json({nome: 'Tudo certo!'})
+routes.get('/', (req, res) => {
+ res.status(200).json({nome: 'Seja bem-vindo(a) a uma aplicação criada por Rayssa Freitas :)'})
 })
 
 module.exports = routes
