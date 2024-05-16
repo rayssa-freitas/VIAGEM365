@@ -1,0 +1,151 @@
+const { Router, query } = require('express')
+const Usuario = require('../models/Usuario')
+const validandoSenha = require('./validation');
+
+const usuarioRoutes = new Router()
+
+usuarioRoutes.post('/cadastro', async (req, res) => {
+   try{
+    const nome = req.body.nome
+    const cpf = req.body.cpf
+    const email = req.body.email
+    const senha = req.body.senha
+    const bairro = req.body.bairro
+    const data_nascimento = req.body.data_nascimento
+    
+    if(!nome) {
+     return res.status(400).json({
+      message: 'O preenchimento do campo nome é obrigatório!'
+     })
+    }
+
+    if(!cpf) {
+     return res.status(400).json({
+      message: 'O preenchimento do campo CPF é obrigatório!'
+     })
+    }
+
+    if(!(cpf.length == 11)) {
+     return res.status(400).json({
+      message: 'O campo CPF deve conter somente 11 dígitos!'
+     })
+    }
+
+    if(!email) {
+     return res.status(400).json({
+      message: 'O e-mail é um campo obrigatório!'
+     })
+    }
+
+    if(!senha) {
+     return res.status(400).json({
+      message: 'A senha é um campo obrigatório!'
+     })
+    }
+
+    if(!bairro) {
+     return res.status(400).json({
+      message: 'O preenchimento do campo bairro é obrigatório!'
+     })
+    }
+
+    if(!data_nascimento) {
+     return res.status(400).json({
+      message: 'O preenchimento do campo data de nascimento é obrigatório!'
+     })
+    }
+
+    if(!data_nascimento.match(/\d{4}-\d{2}-\d{2}/gm)) {
+     return res.status(400).json({
+      message: 'O campo data de nascimento não está no formato correto!'
+     })
+
+    if(!validandoSenha(senha)) {
+     return res.status(400).json({
+      message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, no mínimo, uma letra maiúscula, uma letra minúscula, um número e 8 caracteres!'
+     })
+    }
+
+    const cpfExistente = await Usuario.findOne({
+     where: {
+     cpf: cpf
+     }
+    });
+
+    if (cpfExistente) {
+     return res.status(400).json({
+      message: 'Esse CPF pertence a uma conta que já possui cadastro.'
+     })
+    }
+
+    const emailExistente = await Usuario.findOne({
+     where: {
+     email: email
+     }
+    });
+
+    if (emailExistente) {
+     return res.status(400).json({
+      message: 'Esse e-mail pertence a uma conta que já possui cadastro.'
+     })
+    }
+
+    const usuario = await Usuario.create({
+     nome: nome,
+     cpf: cpf,
+     email: email,
+     senha: senha,
+     bairro: bairro, 
+     data_nascimento: data_nascimento
+ })
+ res.status(201).json(usuario)
+
+    }
+   } catch (error) {
+    console.error(error.message)
+    res.status(500).json({
+     error: 'Não foi realizar o seu cadastro. Tente Novamente!'
+    })
+   }
+})
+
+usuarioRoutes.get('/login', async (req, res) => {
+   try{
+    const email = req.body.email
+    const senha = req.body.senha
+
+    if(!email) {
+     return res.status(400).json({
+      message: 'E-mail obrigatório!'
+    })
+   }
+
+    if(!senha) {
+     return res.status(400).json({
+      message: 'Senha obrigatória!'
+    })
+   }
+
+   const usuario = await Usuario.findOne({
+    where: {
+     email: email,
+     senha: senha
+    }
+   })
+
+   if(!usuario) {
+    return res.status(404).json({
+     message: 'Usuário não encontrado!'
+   })
+
+   }
+  } catch (error) {
+   res.status(500).json({
+    error: error, message: 'Algo deu errado!'
+   })
+  }
+ })
+
+
+
+module.exports = usuariosRoutes
