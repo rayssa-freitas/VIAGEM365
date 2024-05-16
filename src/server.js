@@ -10,7 +10,7 @@ class Server {
 {
   this.middlewares(server)
   this.database()
-  server.use()
+  server.use(routes)
   this.initializeServer(server)
 }
 
