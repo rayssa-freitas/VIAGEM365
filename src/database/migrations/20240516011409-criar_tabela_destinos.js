@@ -20,8 +20,16 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
+      destino_nome: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
       localizacao: {
         allowNull: false,
+        type: Sequelize.STRING
+      },
+      descricao: {
+        allowNull: true,
         type: Sequelize.STRING
       },
       cep: {
@@ -30,17 +38,17 @@ module.exports = {
       },
       latitude: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.FLOAT
       },
       longitude: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.FLOAT
       },
-      createAt: {
+      createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
-      updateAt: {
+      updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
       } 
