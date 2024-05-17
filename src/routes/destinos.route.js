@@ -10,12 +10,7 @@ destinoRoutes.get('/destinos', async (req, res) => {
 
 })
 
-destinoRoutes.get('/destino:cep', async (req, res) => {
- 
- try{ 
-
- }
-})
+destinoRoutes.get('/destino:cep', async (req, res))
 destinoRoutes.post('/criarnovodestino', async (req, res) => {
  
 })
