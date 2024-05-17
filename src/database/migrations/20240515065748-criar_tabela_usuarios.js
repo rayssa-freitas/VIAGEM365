@@ -36,7 +36,7 @@ module.exports = {
       },
       sexo: {
         allowNull: false, 
-        type: Sequelize.DATE
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
