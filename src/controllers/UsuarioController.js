@@ -1,5 +1,5 @@
 const Usuario = require('../models/Usuario')
-const validandoSenha = require('./validation');
+const validandoSenha = require('./validation')
 
 
 class UsuarioController {
@@ -12,7 +12,8 @@ class UsuarioController {
        const senha = req.body.senha
        const bairro = req.body.bairro
        const data_nascimento = req.body.data_nascimento
-       
+       const sexo = req.body.sexo
+
        if(!nome) {
         return res.status(400).json({
          message: 'O preenchimento do campo nome é obrigatório!'
@@ -60,10 +61,20 @@ class UsuarioController {
          message: 'O campo data de nascimento não está no formato correto!'
         })
        }
+
+       const sexoConversaoMinusculo = sexo.toLowerCase();
+
+
+       if(!['masculino', 'feminino', 'outro'].includes(sexoConversaoMinusculo)) {
+        return res.status(400).json({
+         message: 'O preenchimento do campo sexo é obrigatório! Escolha entre "Masculino", "Feminino" ou "Outro".'
+        })
+       }
+  
    
        if(!validandoSenha(senha)) {
         return res.status(400).json({
-         message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, uma letra maiúscula, uma letra minúscula, um número, um caractere, no mínimo. Além de conter entre, 8 à 16 caracteres!'
+         message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, uma letra maiúscula, uma letra minúscula, um número, um caractere, no mínimo. Precisa conter entre 8 à 16 dígitos.'
         })
        }
    
@@ -97,7 +108,8 @@ class UsuarioController {
         email: email,
         senha: senha,
         bairro: bairro, 
-        data_nascimento: data_nascimento
+        data_nascimento: data_nascimento,
+        sexo: sexo
     })
     res.status(201).json(usuario)
       
@@ -147,4 +159,4 @@ class UsuarioController {
      }
 
 }
-module.exports = new UsuarioController()
+module.exports = new UsuarioController()  
