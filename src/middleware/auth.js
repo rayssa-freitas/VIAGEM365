@@ -2,7 +2,7 @@ const { verify } = require("jsonwebtoken")
 
 async function auth(req, res, next) {
    try{
-    console.log("Mid")
+    console.log("Token válido")
 
     const {token} = req.headers
 
