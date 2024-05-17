@@ -1,6 +1,7 @@
 # Viagem365
 
 ## Objetivos:
+### Oferecer uma lista de destinos para que os usuários possam escolher e visualizar informações detalhadas. O cadastro de usuários é essencial para criar uma comunidade de viajantes interessados em explorar destinos sustentáveis e compartilhar experiências. Além de incentivar os usuários a compartilhar dicas e relatos de suas viagens.
 
 ## Visão: 
 ### A iniciativa "Viagem365" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
@@ -19,30 +20,24 @@
 ### Para garantir o sucesso e a segurança da plataforma, algumas melhorias são cruciais:
 
 ## 1. Segurança dos Usuários:
-### Implementação de verificações rigorosas de CPF e antecedentes criminais.
+#### Implementação de verificações rigorosas de CPF e antecedentes criminais.
 #### Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
 
 ## 2. Sistema de Avaliações:
-### Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
-### As avaliações contribuem para a reputação e a confiabilidade dentro da comunidade.
+#### Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
+#### As avaliações contribuem para a reputação e a confiabilidade dentro da comunidade.
 
 ## 3. Personalização de Interesses:
-### Introdução de filtros personalizáveis, permitindo aos usuários escolher passeios que atendam aos seus interesses específicos, como praias ou trilhas.
+#### Introdução de filtros personalizáveis, permitindo aos usuários escolher passeios que atendam aos seus interesses específicos, como praias ou trilhas.
 
 ## 4. Integração com Negócios Locais:
-### Promoção de negócios locais através de anúncios no aplicativo, incentivando o turismo e o apoio à economia local.
+#### Promoção de negócios locais através de anúncios no aplicativo, incentivando o turismo e o apoio à economia local.
 
 ## 5. Eventos e Atividades:
-### Organização de eventos e atividades exclusivas para os usuários do aplicativo, como trilhas guiadas, workshops culturais e visitas a locais históricos.
+#### Organização de eventos e atividades exclusivas para os usuários do aplicativo, como trilhas guiadas, workshops culturais e visitas a locais históricos.
 
 ## 6. Gamificação:
-### Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
-
-
-## Melhorias (?)
-Descrever como executar;
-Descrever quais melhorias podem ser aplicadas;
-Entre outras coisas.
+#### Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
 
 
 ## Ferramentas utilizadas:
@@ -62,11 +57,8 @@ Entre outras coisas.
 
 8. Seeders: Para o preenchimento do banco de dados com dados de teste, facilitando o desenvolvimento e a verificação da aplicação. Inicialização do banco de dados com dados necessários para que a aplicação possa ser testada e validada desde o início do desenvolvimento.
 
-<img src =  "diagrama">   
-
 ## Rodando o repositório:
 ### Git clone no seguinte repositório: `https://github.com/rayssa-freitas/VIAGEM365.git`
-<img src = "../images/images.png">
 
 ### Intalação das dependências:
 1. `npm install`
@@ -86,3 +78,6 @@ Entre outras coisas.
 `npm install -g sequelize-cli` 
 ### instalar o dotenv
 `npm install dotenv`
+
+
+### Desenvolvido por Rayssa Maciel de Freitas
