@@ -38,13 +38,6 @@
 ## 6. Gamificação:
 ### Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
 
-
-## Melhorias (?)
-Descrever como executar;
-Descrever quais melhorias podem ser aplicadas;
-Entre outras coisas.
-
-
 ## Ferramentas utilizadas:
 1. Draw.io: Para criação de diagramas claros e detalhados, facilitando a visualização da arquitetura do sistema e o fluxo de processos.
 
