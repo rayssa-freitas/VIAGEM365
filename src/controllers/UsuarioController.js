@@ -159,4 +159,4 @@ class UsuarioController {
      }
 
 }
-module.exports = new UsuarioController()
+module.exports = new UsuarioController()  
