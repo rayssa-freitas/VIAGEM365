@@ -15,14 +15,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {
           model: 'usuarios',
-          key: 'usuario_id'
+          key: 'usuario_id' 
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
       destino_nome: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING 
       },
       localizacao: {
         allowNull: false,
