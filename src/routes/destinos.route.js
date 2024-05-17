@@ -1,4 +1,4 @@
-// const { Router, query } = require('express')
+// const { Router, query } = require('express') 
 
 // const DestinoController = require('../controllers/DestinoController')
 

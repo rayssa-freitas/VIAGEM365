@@ -7,5 +7,5 @@ const usuarioRoutes = new Router()
 usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar)
 
 usuarioRoutes.get('/login', UsuarioController.login)
-
-module.exports = usuariosRoutes
+  
+module.exports = usuariosRoutes 
