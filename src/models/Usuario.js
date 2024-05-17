@@ -26,4 +26,4 @@ const Usuario = connection.define('usuarios', {
 })
  
 
-module.exports = Usuario
+module.exports = Usuario 
