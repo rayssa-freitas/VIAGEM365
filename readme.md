@@ -1,7 +1,6 @@
 # Viagem365
 
 ## Objetivos:
-# Implementação de uma API como 
 
 ## Visão: 
 ### A iniciativa "Viagem365" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
@@ -19,24 +18,24 @@
 ## Melhorias Estratégicas:
 ### Para garantir o sucesso e a segurança da plataforma, algumas melhorias são cruciais:
 
-1. Segurança dos Usuários:
+## 1. Segurança dos Usuários:
 ### Implementação de verificações rigorosas de CPF e antecedentes criminais.
 #Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
 
-2. Sistema de Avaliações:
+## 2. Sistema de Avaliações:
 ### Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
 ### As avaliações contribuem para a reputação e a confiabilidade dentro da comunidade.
 
-3. Personalização de Interesses:
+## 3. Personalização de Interesses:
 ### Introdução de filtros personalizáveis, permitindo aos usuários escolher passeios que atendam aos seus interesses específicos, como praias ou trilhas.
 
-4. Integração com Negócios Locais:
+## 4. Integração com Negócios Locais:
 ### Promoção de negócios locais através de anúncios no aplicativo, incentivando o turismo e o apoio à economia local.
 
-5. Eventos e Atividades:
+## 5. Eventos e Atividades:
 ### Organização de eventos e atividades exclusivas para os usuários do aplicativo, como trilhas guiadas, workshops culturais e visitas a locais históricos.
 
-6. Gamificação:
+## 6. Gamificação:
 ### Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
 
 
@@ -67,7 +66,7 @@ Entre outras coisas.
 
 ## Rodando o repositório:
 ### Git clone no seguinte repositório: `https://github.com/rayssa-freitas/VIAGEM365.git`
-<img src = "./images/images.png">
+<img src = "../images/images.png">
 
 ### Intalação das dependências:
 1. `npm install`
