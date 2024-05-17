@@ -1,5 +1,4 @@
 const { Router, query } = require('express')
-
 const UsuarioController = require('../controllers/UsuarioController');
 
 const usuarioRoutes = new Router() 

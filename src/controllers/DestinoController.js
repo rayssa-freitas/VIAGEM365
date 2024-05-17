@@ -1,1 +1,1 @@
- 
+const { sign } = require('jsonwebtoken')
