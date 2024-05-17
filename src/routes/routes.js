@@ -5,7 +5,7 @@ const destinoRoutes = require("./destinos.route")
 const routes = Router()
 
 routes.use('/usuarios', usuarioRoutes)
-// routes.use('/destinos', destinoRoutes)
+routes.use('/destinos', destinoRoutes)
  
 
 routes.get('/', (req, res) => {

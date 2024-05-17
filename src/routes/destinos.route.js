@@ -1,6 +1,8 @@
-const { Router, query } = require('express') 
+const { Router } = require('express') 
 
 const DestinoController = require('../controllers/DestinoController')
+
+const { auth } = require('../middleware/auth')
 
 const destinoRoutes = new Router()
 

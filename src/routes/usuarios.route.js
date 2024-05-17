@@ -1,10 +1,39 @@
-const { Router, query } = require('express')
+const { Router } = require('express')
 const UsuarioController = require('../controllers/UsuarioController');
+
+const { auth } = require('../middleware/auth')
 
 const usuarioRoutes = new Router() 
 
 usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar)
+   /*
+    #swagger.tags = ['Usuario'],
+    #swagger.parameters['body'] = {
+     in: 'body',
+     description: 'Adicionar um novo usuario',
+     schema: {
+        nome: "Rayssa Maciel de Freitas",
+        cpf: "78398747283",
+        email: "rayssafreitas102@gmail.com",
+        senha: "Rkd90#!js",
+        bairro: "Centro",
+        data_nascimento: "2001-01-24",
+        sexo: "Feminino"
+     }
+    }
+   */
 
-usuarioRoutes.get('/login', UsuarioController.login)
+usuarioRoutes.post('/login', UsuarioController.login)
+     /*
+    #swagger.tags = ['Usuario'],
+    #swagger.parameters['body'] = {
+     in: 'body',
+     description: 'Realizar o Login do usuário',
+     schema: {
+        email: "rayssafreitas102@gmail.com",
+        senha: "Rkd90#!js"
+     }
+    }
+   */
   
 module.exports = usuarioRoutes 
