@@ -35,7 +35,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       sexo: {
-        allowNull: false,
+        allowNull: false, 
         type: Sequelize.DATE
       },
       createdAt: {
