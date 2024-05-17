@@ -32,4 +32,4 @@
 //  res.status(204).json({})
 // })
 
-// module.exports = destinoRoutes
+// module.exports = destinoRoutes 

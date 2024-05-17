@@ -2,7 +2,7 @@ const { Router, query } = require('express')
 
 const UsuarioController = require('../controllers/UsuarioController');
 
-const usuarioRoutes = new Router()
+const usuarioRoutes = new Router() 
 
 usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar)
 
