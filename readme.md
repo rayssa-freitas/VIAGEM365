@@ -66,26 +66,17 @@
 ![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/ead8ad99-ebe2-4add-b739-23b3a268a14a)
 
 ## Rodando o repositório:
-### Git clone no seguinte repositório: `https://github.com/rayssa-freitas/VIAGEM365.git`
+### Clone o repositório com o comando: git clone `https://github.com/rayssa-freitas/VIAGEM365.git`
 
 ### Intalação das dependências:
 1. `npm install`
 2. Em ambiente local: `npm install --dev`
-3. `cp .env_example .env`
+
+## Criar pasta `.env` a partir do env.example com os dados da sua máquina
 
 ### Para executar em ambiente local:
 1. `npm run start:dev`
 
-## Criar pasta `.env` a partir do env.example com os dados da sua máquina
-
-### instalar o sequelize
-`npm install sequelize` 
-### instalar o driver do PostgreSQL
-`npm install pg` 
-### instalar o CLI do sequelize
-`npm install -g sequelize-cli` 
-### instalar o dotenv
-`npm install dotenv`
 
 
 ### Desenvolvido por Rayssa Maciel de Freitas
