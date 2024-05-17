@@ -3,9 +3,6 @@ const { connection } = require('../database/connection')
 const Usuario = require('./Usuario')
 
 const Destino = connection.define('destinos', {
-    usuario_id:{
-     type: DataTypes.INTEGER,
-    },
     destino_nome:{
      type: DataTypes.STRING,
     },
