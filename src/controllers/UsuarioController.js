@@ -1,11 +1,11 @@
 const Usuario = require('../models/Usuario')
-const validandoSenha = require('./validation')
+const { validandoSenha } = require('../services/validation.service')
 
  
 class UsuarioController {
 
      async cadastrar(req, res){
-      try{
+      // try{
        const nome = req.body.nome
        const cpf = req.body.cpf
        const email = req.body.email
@@ -70,7 +70,6 @@ class UsuarioController {
          message: 'O preenchimento do campo sexo é obrigatório! Escolha entre "Masculino", "Feminino" ou "Outro".'
         })
        }
-  
    
        if(!validandoSenha(senha)) {
         return res.status(400).json({
@@ -111,14 +110,18 @@ class UsuarioController {
         data_nascimento: data_nascimento,
         sexo: sexo
     })
+
+    console.log("AQUII")
+
     res.status(201).json(usuario)
       
-      } catch (error) {
-       console.error(error.message)
-       res.status(500).json({
-        error: 'Não foi realizar o seu cadastro. Tente Novamente!'
-       })
-      }
+    
+      // } catch (error) {
+      //  console.error(error.message)
+      //  res.status(500).json({
+      //   error: 'Não foi realizar o seu cadastro. Tente Novamente!'
+      //  })
+      // }
      }
 
      async login(req, res) {

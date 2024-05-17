@@ -20,8 +20,7 @@ function validandoSenha(senha) {
   return false
  }
 
-
  return true
-
- module.exports = validandoSenha
 }
+
+ module.exports =  { validandoSenha }

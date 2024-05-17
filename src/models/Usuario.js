@@ -18,12 +18,6 @@ const Usuario = connection.define('usuarios', {
     email:{
      type: DataTypes.STRING,
      unique: true,
-     validate: {
-        isEmail: {
-           args: true,
-           message: 'Formato de e-mail inválido'
-        }
-    }
     },
     senha:{
      type: DataTypes.STRING,

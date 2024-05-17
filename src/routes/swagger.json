@@ -1,94 +1,116 @@
 {
-   "swagger": "2.0",
-   "info": {
-   "title": "VIAGEM365",
-   "description": "Projeto da turma TRIP, módulo 1, onde foi realizado o desenvolvimento de uma API REST",
-   "version": "1.0.0"
- },
-
-   "host": "localhost:3000",
-   "basePath": "/",
-   "schemes": [
+  "swagger": "2.0",
+  "info": {
+    "title": "VIAGEM365",
+    "description": "Projeto da turma TRIP, módulo 1, onde foi realizado o desenvolvimento de uma API REST",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
     "http"
-   ], 
-   "securityDefinitions": {
-     "apyKeyAuth": {
-       "type": "apiKey",
-       "in": "header",
-       "name": "authorization",
-       "description": "Token autorizado"
-     }
-   },
-   "paths": {
-     "/usuarios/": {
+  ],
+  "securityDefinitions": {
+    "apiKeyAuth": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "authorization",
+      "description": "Token de autenticação"
+    }
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/usuarios/cadastrar": {
       "post": {
-        "tags": [
-          "Usuario"
-        ],
-        "description": "Insira os dados do usuário",
+        "description": "",
         "parameters": [
-         {
-          "nome": "body",
-          "in": "body",
-          "description": "Adicionar novo usuário",
-          "schema": {
-            "type": "objetct",
-            "properties": {
-              "nome": {
-                "type": "string",
-                "example": "Rayssa Freitas"
-              },
-              "cpf": {
-                "type": "number",
-                "example": 23
-              },
-              "email": {
-                "type": "string",
-                "example": "rayssafreitas102@gmail.com"
-              },
-              "senha": {
-                 "type": "string",
-                 "example": "Aety739!$"
-              },
-              "bairro": {
-                 "type": "string",
-                 "example": "Centro"
-              },
-              "data_nascimento": {
-                 "type": "date",
-                 "example": "2001-01-24"
-              },
-              "sexo": {
-                 "type": "string",
-                 "example": "Feminino"
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "any"
+                },
+                "cpf": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "senha": {
+                  "example": "any"
+                },
+                "bairro": {
+                  "example": "any"
+                },
+                "data_nascimento": {
+                  "example": "any"
+                },
+                "sexo": {
+                  "example": "any"
+                }
               }
-             },
-             "required": [
-              "nome",
-              "cpf",
-              "email",
-              "senha",
-              "bairro",
-              "data_nascimento",
-              "sexo"
-             ]
-            }
-           },
-           {
-            "nome": "parameterNome",
-            "in": "query",
-            "description": "Insira o seu nome completo",
-            "type": "string"
-           }
-          ],
-
-
             }
           }
-
-         }
-        ]
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
       }
-     }
-   }
+    },
+    "/usuarios/login": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "senha": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "apyKeyAuth": []
+    }
+  ]
 }
