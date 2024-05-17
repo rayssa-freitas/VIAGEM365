@@ -10,7 +10,7 @@ class Server {
   this.middlewares(server)
   this.database()
   this.initializeServer(server)
-}
+}   
 
 async middlewares(app) {
  app.use(cors())
