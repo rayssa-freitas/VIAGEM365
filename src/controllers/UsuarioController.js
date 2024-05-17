@@ -1,7 +1,7 @@
 const Usuario = require('../models/Usuario')
 const validandoSenha = require('./validation')
 
-
+ 
 class UsuarioController {
 
      async cadastrar(req, res){
