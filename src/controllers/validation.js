@@ -1,7 +1,7 @@
 function validandoSenha(senha) {
  
  if(!(senha.length >= 8)||!(senha.length <= 16)) {
-  return false;
+  return false
  }
 
  if(!senha.match(/\d/)) { 
