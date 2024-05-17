@@ -5,7 +5,7 @@ const { auth } = require('../middleware/auth')
 
 const usuarioRoutes = new Router() 
 
-usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar)
+usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar
    /*
     #swagger.tags = ['Usuario'],
     #swagger.parameters['body'] = {
@@ -22,18 +22,7 @@ usuarioRoutes.post('/cadastrar', UsuarioController.cadastrar)
      }
     }
    */
+   )
 
-usuarioRoutes.post('/login', UsuarioController.login)
-     /*
-    #swagger.tags = ['Usuario'],
-    #swagger.parameters['body'] = {
-     in: 'body',
-     description: 'Realizar o Login do usuário',
-     schema: {
-        email: "rayssafreitas102@gmail.com",
-        senha: "Rkd90#!js"
-     }
-    }
-   */
   
 module.exports = usuarioRoutes 

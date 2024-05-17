@@ -14,7 +14,7 @@ module.exports = {
     sexo: "Feminino"
    },
    {
-    nome: "Manoel dos Santod",
+    nome: "Manoel dos Santos",
     cpf: "94738189037",
     email: "manoel.santos@gmail.com",
     senha: "MS674!msan",

@@ -19,7 +19,7 @@ const Destino = connection.define('destinos', {
      type: DataTypes.FLOAT,
     },
     longitude:{
-     type: DataTypes.FLOAT,
+     type: DataTypes.FLOAT, 
     }
 })
 

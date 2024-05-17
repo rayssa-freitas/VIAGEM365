@@ -1,11 +1,10 @@
 const Usuario = require('../models/Usuario')
 const { validandoSenha } = require('../services/validation.service')
-
  
 class UsuarioController {
 
-     async cadastrar(req, res){
-      // try{
+    async cadastrar(req, res){
+      try{
        const nome = req.body.nome
        const cpf = req.body.cpf
        const email = req.body.email
@@ -111,55 +110,57 @@ class UsuarioController {
         sexo: sexo
     })
 
-    console.log("AQUII")
-
     res.status(201).json(usuario)
       
     
-      // } catch (error) {
-      //  console.error(error.message)
-      //  res.status(500).json({
-      //   error: 'Não foi realizar o seu cadastro. Tente Novamente!'
-      //  })
-      // }
+      } catch (error) {
+       console.error(error.message)
+       res.status(500).json({
+        error: 'Não foi realizar o seu cadastro. Tente Novamente!'
+       })
+      }
      }
 
-     async login(req, res) {
-      try{
-       const email = req.body.email
-       const senha = req.body.senha
+    //  async login(req, res) {
+    //   try{
+    //    const email = req.body.email
+    //    const senha = req.body.senha
    
-       if(!email) {
-        return res.status(400).json({
-         message: 'E-mail obrigatório!'
-       })
-      }
+    //    if(!email) {
+    //     return res.status(400).json({
+    //      message: 'E-mail obrigatório!'
+    //    })
+    //   }
    
-       if(!senha) {
-        return res.status(400).json({
-         message: 'Senha obrigatória!'
-       })
-      }
+    //    if(!senha) {
+    //     return res.status(400).json({
+    //      message: 'Senha obrigatória!'
+    //    })
+    //   }
    
-      const usuario = await Usuario.findOne({
-       where: {
-        email: email,
-        senha: senha
-       }
-      })
+    //   const usuario = await Usuario.findOne({
+    //    where: {
+    //     email: email,
+    //     senha: senha
+    //    }
+    //   })
    
-      if(!usuario) {
-       return res.status(404).json({
-        message: 'Usuário não encontrado!'
-      })
-   
-      }
-     } catch (error) {
-      res.status(500).json({
-       error: error, message: 'Algo deu errado!'
-      })
-     }
-     }
+    //   if(!usuario) {
+    //    return res.status(404).json({
+    //     message: 'Usuário não encontrado!'
+    //   })
+    //   }
+
+    //   res.status(201).json(usuario)({
+
+    //   })
+          
+    //  } catch (error) {
+    //   res.status(500).json({
+    //    error: error, message: 'Algo deu errado!'
+    //   })
+    //  }
+    //  }
 
 }
 module.exports = new UsuarioController()  
