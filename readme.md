@@ -59,6 +59,11 @@
 
 8. Seeders: Para o preenchimento do banco de dados com dados de teste, facilitando o desenvolvimento e a verificação da aplicação. Inicialização do banco de dados com dados necessários para que a aplicação possa ser testada e validada desde o início do desenvolvimento.
 
+9. Axios: Requisições HTTP a API de mapas, a partir do Node.js.
+
+10. Nominatim: Geocodificação de código aberto, permite converter endereços em coordenas geográficas, e vice-versa.
+
+11. JsonWebToken: Autenticação de usuários e troca segura de informações entre o cliente e o servidor.
 
 ## Diagramas:
 ![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/f55b4c0d-e30f-44e5-86dc-a6aef4a85752)
@@ -72,11 +77,24 @@
 1. `npm install`
 2. Em ambiente local: `npm install --dev`
 
-## Criar pasta `.env` a partir do env.example com os dados da sua máquina
+### Criar pasta `.env` a partir do env.example com os dados da sua máquina
 
 ### Para executar em ambiente local:
-1. `npm run start:dev`
+#### `npm run start:dev`
 
+### Instalação do JsonWebToken
+#### `npm install jsonwebtoken`
 
+### Instalação do Axios
+#### `npm install axios`
+
+### Para carregar Seeders
+#### `sequelize db:seed:all`
+
+### Instalação do Swagger UI
+#### `npm install swagger-ui-express`
+
+### Instalação do Swagger AutoGen
+#### `npm install swagger-autogen`
 
 ### Desenvolvido por Rayssa Maciel de Freitas
