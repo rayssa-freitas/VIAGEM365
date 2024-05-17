@@ -1,5 +1,5 @@
 const Usuario = require('../models/Usuario')
-const validandoSenha = require('./validation');
+const validandoSenha = require('./validation')
 
 
 class UsuarioController {
@@ -63,11 +63,7 @@ class UsuarioController {
    
        if(!validandoSenha(senha)) {
         return res.status(400).json({
-<<<<<<< Updated upstream
-         message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, uma letra maiúscula, uma letra minúscula, um número, um caractere, no mínimo. Além de conter entre, 8 à 16 caracteres!'
-=======
-         message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, no mínimo, uma letra maiúscula, uma letra minúscula, um número e 8 caracteres!'
->>>>>>> Stashed changes
+         message: 'Não foi possível realizar o seu cadastro. Lembre-se a senha deve conter, uma letra maiúscula, uma letra minúscula, um número, um caractere, no mínimo. Precisa conter entre 8 à 16 dígitos!'
         })
        }
    
