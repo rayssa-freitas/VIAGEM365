@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize')
-const { connection } = require('../database/connection')
+const { connection } = require('../database/connection') 
 
 const Usuario = connection.define('usuarios', {
     nome:{
@@ -24,6 +24,6 @@ const Usuario = connection.define('usuarios', {
      type: DataTypes.STRING,
     }
 })
+ 
 
-
-module.exports = Usuario
+module.exports = Usuario 
