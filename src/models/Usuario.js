@@ -24,6 +24,6 @@ const Usuario = connection.define('usuarios', {
      type: DataTypes.STRING,
     }
 })
-
+ 
 
 module.exports = Usuario
