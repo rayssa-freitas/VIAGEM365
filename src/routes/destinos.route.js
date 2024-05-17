@@ -8,9 +8,10 @@ destinoRoutes.get('/destinos', async (req, res) => {
 
 })
 
-destinoRoutes.get('/destino:cep', async (req, res) => {
- 
- try{ 
+destinoRoutes.get('/:id', async (req, res) => {
+   try{
+    
+    const {id} = req.params[[]]
 
  }
 })
