@@ -23,7 +23,7 @@ const Usuario = connection.define('usuarios', {
     sexo:{
      type: DataTypes.STRING,
     }
-})
+})   
  
 
 module.exports = Usuario 
