@@ -6,6 +6,9 @@ const Destino = connection.define('destinos', {
     destino_nome:{
      type: DataTypes.STRING,
     },
+    usuario_id:{
+     type: DataTypes.INTEGER,
+    },
     localizacao:{
      type: DataTypes.STRING,
     },
