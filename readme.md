@@ -1,5 +1,5 @@
 # Viagem365
-
+ 
 ## Visão: 
 ### A iniciativa "Viagem365" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
 
