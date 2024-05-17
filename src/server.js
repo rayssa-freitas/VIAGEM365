@@ -12,7 +12,7 @@ class Server {
   this.database()
   server.use(routes)
   this.initializeServer(server)
-}
+} 
 
 async middlewares(app) {
  app.use(cors())
