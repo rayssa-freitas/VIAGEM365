@@ -1,11 +1,18 @@
 const { Router } = require('express') 
 
 const DestinoController = require('../controllers/DestinoController')
-
+const Destino
 const destinoRoutes = new Router()
 
-destinoRoutes.get('/destinos', async (req, res) => {
+destinoRoutes.get('/destinos/:cep', async (req, res) => {
+   const cep = req.params.cep
 
+   try{
+
+    const response = await axios.get(`https://nominatim.openstreetmap.org/search?format=json&postalcode=${cep}&country=Brazil&limit=1`);
+
+    console.log()
+   }
 })
 
 destinoRoutes.get('/:id', async (req, res) => {
