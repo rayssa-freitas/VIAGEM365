@@ -5,6 +5,7 @@ module.exports = {
  up: async (QueryInterface, Sequelize) => {
   await Usuario.bulkCreate([
    {
+    id: 1,
     nome: "Rayssa Maciel de Freitas",
     cpf: "78398747283",
     email: "rayssafreitas102@gmail.com",
@@ -14,6 +15,7 @@ module.exports = {
     sexo: "Feminino"
    },
    {
+    id: 2,
     nome: "Manoel dos Santos",
     cpf: "94738189037",
     email: "manoel.santos@gmail.com",
@@ -23,6 +25,7 @@ module.exports = {
     sexo: "Masculino"
    },
    {
+    id: 3,
     nome: "Manoela Pereira de Jesus",
     cpf: "63819278647",
     email: "manupereira@gmail.com",

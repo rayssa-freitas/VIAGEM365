@@ -120,47 +120,5 @@ class UsuarioController {
        })
       }
      }
-
-    //  async login(req, res) {
-    //   try{
-    //    const email = req.body.email
-    //    const senha = req.body.senha
-   
-    //    if(!email) {
-    //     return res.status(400).json({
-    //      message: 'E-mail obrigatório!'
-    //    })
-    //   }
-   
-    //    if(!senha) {
-    //     return res.status(400).json({
-    //      message: 'Senha obrigatória!'
-    //    })
-    //   }
-   
-    //   const usuario = await Usuario.findOne({
-    //    where: {
-    //     email: email,
-    //     senha: senha
-    //    }
-    //   })
-   
-    //   if(!usuario) {
-    //    return res.status(404).json({
-    //     message: 'Usuário não encontrado!'
-    //   })
-    //   }
-
-    //   res.status(201).json(usuario)({
-
-    //   })
-          
-    //  } catch (error) {
-    //   res.status(500).json({
-    //    error: error, message: 'Algo deu errado!'
-    //   })
-    //  }
-    //  }
-
 }
 module.exports = new UsuarioController()  
