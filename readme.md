@@ -63,7 +63,7 @@ Entre outras coisas.
 
 8. Seeders: Para o preenchimento do banco de dados com dados de teste, facilitando o desenvolvimento e a verificação da aplicação. Inicialização do banco de dados com dados necessários para que a aplicação possa ser testada e validada desde o início do desenvolvimento.
 
-<img src =  "diagrama">
+<img src =  "diagrama">   
 
 ## Rodando o repositório:
 ### Git clone no seguinte repositório: `https://github.com/rayssa-freitas/VIAGEM365.git`
