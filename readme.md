@@ -1,8 +1,5 @@
 # Viagem365
 
-## Objetivos:
-### Oferecer uma lista de destinos para que os usuários possam escolher e visualizar informações detalhadas. O cadastro de usuários é essencial para criar uma comunidade de viajantes interessados em explorar destinos sustentáveis e compartilhar experiências. Além de incentivar os usuários a compartilhar dicas e relatos de suas viagens.
-
 ## Visão: 
 ### A iniciativa "Viagem365" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
 
@@ -15,6 +12,11 @@
 ### Inclusão Social e Cultural: A aplicação também serve como uma ponte para novos residentes e viajantes de curta duração, ajudando-os a se integrar e a conhecer as maravilhas locais. Para os moradores de longa data, é uma oportunidade de ver a cidade sob uma nova luz e para os anfitriões locais, uma chance de compartilhar o orgulho de sua “casa”.
 
 ### Em essência, a “Viagem365” é mais do que uma ferramenta de viagem; é um movimento para reconectar as pessoas com a riqueza cultural e natural de Florianópolis, transformando cada saída em uma aventura significativa e cada encontro em uma nova amizade. 
+
+
+## Objetivos:
+### Oferecer uma lista de destinos para que os usuários possam escolher e visualizar informações detalhadas. Já, o cadastro de usuários é essencial para criar uma comunidade de viajantes interessados em explorar destinos sustentáveis e compartilhar experiências. Além de incentivar os usuários a compartilhar dicas e relatos de suas viagens.
+
 
 ## Melhorias Estratégicas:
 ### Para garantir o sucesso e a segurança da plataforma, algumas melhorias são cruciais:
@@ -56,6 +58,12 @@
 7. Swagger: Documentação de APIs para facilitar o entendimento e o uso dos endpoints por desenvolvedores e usuários finais. Possui uma interface amigável para que os usuários possam interagir com a aplicação, testando e compreendendo as funcionalidades disponíveis.
 
 8. Seeders: Para o preenchimento do banco de dados com dados de teste, facilitando o desenvolvimento e a verificação da aplicação. Inicialização do banco de dados com dados necessários para que a aplicação possa ser testada e validada desde o início do desenvolvimento.
+
+
+## Diagramas:
+![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/f55b4c0d-e30f-44e5-86dc-a6aef4a85752)
+
+![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/ead8ad99-ebe2-4add-b739-23b3a268a14a)
 
 ## Rodando o repositório:
 ### Git clone no seguinte repositório: `https://github.com/rayssa-freitas/VIAGEM365.git`
