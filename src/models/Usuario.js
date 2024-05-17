@@ -7,9 +7,23 @@ const Usuario = connection.define('usuarios', {
     },
     cpf:{
      type: DataTypes.STRING,
+     unique: true,
+     validate: {
+        is: {
+           args: /^[0-9]{11}$/i,
+           message: 'O CPF deve possuir 11 dígitos'
+        }
+     }
     },
     email:{
      type: DataTypes.STRING,
+     unique: true,
+     validate: {
+        isEmail: {
+           args: true,
+           message: 'Formato de e-mail inválido'
+        }
+    }
     },
     senha:{
      type: DataTypes.STRING,
