@@ -19,6 +19,9 @@ const Usuario = connection.define('usuarios', {
     },
     data_nascimento:{
      type: DataTypes.DATE,
+    },
+    sexo:{
+     type: DataTypes.STRING,
     }
 })
 
