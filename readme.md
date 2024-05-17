@@ -20,7 +20,7 @@
 
 ## 1. Segurança dos Usuários:
 ### Implementação de verificações rigorosas de CPF e antecedentes criminais.
-#Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
+#### Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
 
 ## 2. Sistema de Avaliações:
 ### Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
