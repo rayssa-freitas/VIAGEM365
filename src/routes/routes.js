@@ -1,6 +1,8 @@
 const { Router } = require('express')
 const usuarioRoutes = require("./usuarios.route")
 const destinoRoutes = require("./destinos.route")
+
+const axios = require('axios')
  
 const routes = Router()
 
