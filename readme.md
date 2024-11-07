@@ -1,4 +1,4 @@
-# DescubraFloripa - BackEnd 
+# DescubraFloripa
 
 ## Visão:
 
