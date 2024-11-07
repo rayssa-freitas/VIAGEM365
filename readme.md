@@ -1,46 +1,51 @@
-# Viagem365
- 
-## Visão: 
-### A iniciativa "Viagem365" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
+# DescubraFloripa - BackEnd 
 
-### Assim, esses grupos se formariam com base no interesse comum em conhecer novos lugares na ilha, facilitando o encontro de companheiros de viagem para compartilhar caronas ou viagens de ônibus, em um modelo similar ao “blablacar”. O objetivo é fortalecer laços sociais e incentivar a descoberta coletiva de trilhas, praias, mirantes, e outros tesouros locais.
+## Visão:
 
-### A longo prazo, a plataforma poderá servir como um canal para promover o comércio local, destacando estabelecimentos que muitas vezes não têm visibilidade devido à falta de investimento em marketing. Isso não apenas apoia a economia local, mas também enriquece a experiência cultural dos usuários.
+A iniciativa "DescubraFloripa" surge como uma celebração da Ilha da Magia, convidando os moradores de Florianópolis e arredores a redescobrir sua própria cidade. Este projeto propõe uma aplicação que conecta pessoas com interesses similares em explorar as belezas escondidas da ilha, incentivando a pergunta: “Por que não ser turista em sua própria cidade?”
 
-### Exemplo Prático: Imagine um grupo de cinco entusiastas ansiosos para explorar o “Morro das Pedras”. Utilizando o Viagem365, eles se conectam via WhatsApp, planejam o passeio e, através de recomendações no app, descobrem um ponto de venda tradicional de “cana-de-açúcar”.
+Assim, esses grupos se formariam com base no interesse comum em conhecer novos lugares na ilha, facilitando o encontro de companheiros de viagem para compartilhar caronas ou viagens de ônibus, em um modelo similar ao “blablacar”. O objetivo é fortalecer laços sociais e incentivar a descoberta coletiva de trilhas, praias, mirantes, e outros tesouros locais.
 
-### Inclusão Social e Cultural: A aplicação também serve como uma ponte para novos residentes e viajantes de curta duração, ajudando-os a se integrar e a conhecer as maravilhas locais. Para os moradores de longa data, é uma oportunidade de ver a cidade sob uma nova luz e para os anfitriões locais, uma chance de compartilhar o orgulho de sua “casa”.
+A longo prazo, a plataforma poderá servir como um canal para promover o comércio local, destacando estabelecimentos que muitas vezes não têm visibilidade devido à falta de investimento em marketing. Isso não apenas apoia a economia local, mas também enriquece a experiência cultural dos usuários.
+Exemplo Prático: Imagine um grupo de cinco entusiastas ansiosos para explorar o “Morro das Pedras”. Utilizando o DescubraFloripa, eles se conectam via WhatsApp, planejam o passeio e, através de recomendações no app, descobrem um ponto de venda tradicional de “caldo de cana”.
 
-### Em essência, a “Viagem365” é mais do que uma ferramenta de viagem; é um movimento para reconectar as pessoas com a riqueza cultural e natural de Florianópolis, transformando cada saída em uma aventura significativa e cada encontro em uma nova amizade. 
+Inclusão Social e Cultural:  A aplicação também serve como uma ponte para novos residentes e viajantes de curta duração, ajudando-os a se integrar e a conhecer as maravilhas locais. Para os moradores de longa data, é uma oportunidade de ver a cidade sob uma nova luz e para os anfitriões locais, uma chance de compartilhar o orgulho de sua “casa”.
+Em essência, o “DescubraFloripa” é mais do que uma ferramenta de viagem; é um movimento para reconectar as pessoas com a riqueza cultural e natural de Florianópolis, transformando cada saída em uma aventura significativa e cada encontro em uma nova amizade.
 
+# Objetivos:
 
-## Objetivos:
-### Oferecer uma lista de destinos para que os usuários possam escolher e visualizar informações detalhadas. Já, o cadastro de usuários é essencial para criar uma comunidade de viajantes interessados em explorar destinos sustentáveis e compartilhar experiências. Além de incentivar os usuários a compartilhar dicas e relatos de suas viagens.
+Oferecer uma lista de destinos para que os usuários possam escolher e visualizar informações detalhadas. Já, o cadastro de usuários é essencial para criar uma comunidade de viajantes interessados em explorar destinos sustentáveis e compartilhar experiências. Além de incentivar os usuários a compartilhar dicas e relatos de suas viagens.
 
+# Melhorias Estratégicas:
 
-## Melhorias Estratégicas:
-### Para garantir o sucesso e a segurança da plataforma, algumas melhorias são cruciais:
+Para garantir o sucesso e a segurança da plataforma, algumas melhorias são cruciais:
 
-## 1. Segurança dos Usuários:
-#### Implementação de verificações rigorosas de CPF e antecedentes criminais.
-#### Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
+1. Segurança dos Usuários:
 
-## 2. Sistema de Avaliações:
-#### Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
-#### As avaliações contribuem para a reputação e a confiabilidade dentro da comunidade.
+Implementação de verificações rigorosas de CPF e antecedentes criminais.
+Criação de um ambiente digital seguro, promovendo confiança e uso contínuo.
 
-## 3. Personalização de Interesses:
-#### Introdução de filtros personalizáveis, permitindo aos usuários escolher passeios que atendam aos seus interesses específicos, como praias ou trilhas.
+2. Sistema de Avaliações:
 
-## 4. Integração com Negócios Locais:
-#### Promoção de negócios locais através de anúncios no aplicativo, incentivando o turismo e o apoio à economia local.
+Desenvolvimento de um sistema de feedback pós-passeio, permitindo que os usuários avaliem suas experiências mútuas.
+As avaliações contribuem para a reputação e a confiabilidade dentro da comunidade.
 
-## 5. Eventos e Atividades:
-#### Organização de eventos e atividades exclusivas para os usuários do aplicativo, como trilhas guiadas, workshops culturais e visitas a locais históricos.
+3. Personalização de Interesses:
 
-## 6. Gamificação:
-#### Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
- 
+Introdução de filtros personalizáveis, permitindo aos usuários escolher passeios que atendam aos seus interesses específicos, como praias ou trilhas.
+
+4. Integração com Negócios Locais:
+
+Promoção de negócios locais através de anúncios no aplicativo, incentivando o turismo e o apoio à economia local.
+
+5. Eventos e Atividades:
+
+Organização de eventos e atividades exclusivas para os usuários do aplicativo, como trilhas guiadas, workshops culturais e visitas a locais históricos.
+
+6. Gamificação:
+
+Implementar um sistema de gamificação onde os usuários ganham pontos e recompensas por participarem de passeios e interagirem com a comunidade.
+
 
 ## Ferramentas utilizadas:
 1. Draw.io: Para criação de diagramas claros e detalhados, facilitando a visualização da arquitetura do sistema e o fluxo de processos.
@@ -69,6 +74,10 @@
 ![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/f55b4c0d-e30f-44e5-86dc-a6aef4a85752)
 
 ![image](https://github.com/rayssa-freitas/VIAGEM365/assets/149340917/ead8ad99-ebe2-4add-b739-23b3a268a14a)
+
+## Planejamento de contrução de Design Web:
+
+![des](https://github.com/user-attachments/assets/d698eba5-8409-41ee-ab97-656bcb5a82e2)
 
 ## Rodando o repositório:
 ### Clone o repositório com o comando: git clone `https://github.com/rayssa-freitas/VIAGEM365.git`
